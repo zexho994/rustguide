@@ -1,0 +1,11 @@
+/Users/zexho/Github/rustguide/guessing-game/target/debug/deps/getrandom-85303af6f497a28e.rmeta: /Users/zexho/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/getrandom-0.2.3/src/lib.rs /Users/zexho/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/getrandom-0.2.3/src/error.rs /Users/zexho/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/getrandom-0.2.3/src/util.rs /Users/zexho/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/getrandom-0.2.3/src/error_impls.rs /Users/zexho/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/getrandom-0.2.3/src/util_libc.rs /Users/zexho/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/getrandom-0.2.3/src/use_file.rs /Users/zexho/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/getrandom-0.2.3/src/macos.rs
+
+/Users/zexho/Github/rustguide/guessing-game/target/debug/deps/getrandom-85303af6f497a28e.d: /Users/zexho/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/getrandom-0.2.3/src/lib.rs /Users/zexho/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/getrandom-0.2.3/src/error.rs /Users/zexho/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/getrandom-0.2.3/src/util.rs /Users/zexho/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/getrandom-0.2.3/src/error_impls.rs /Users/zexho/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/getrandom-0.2.3/src/util_libc.rs /Users/zexho/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/getrandom-0.2.3/src/use_file.rs /Users/zexho/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/getrandom-0.2.3/src/macos.rs
+
+/Users/zexho/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/getrandom-0.2.3/src/lib.rs:
+/Users/zexho/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/getrandom-0.2.3/src/error.rs:
+/Users/zexho/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/getrandom-0.2.3/src/util.rs:
+/Users/zexho/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/getrandom-0.2.3/src/error_impls.rs:
+/Users/zexho/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/getrandom-0.2.3/src/util_libc.rs:
+/Users/zexho/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/getrandom-0.2.3/src/use_file.rs:
+/Users/zexho/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/getrandom-0.2.3/src/macos.rs:
