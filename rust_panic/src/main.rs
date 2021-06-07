@@ -5,9 +5,11 @@ fn main() {
     // assert_eq!(rust_get_option(), "a");
     // assert_eq!(rust_get_option2(), "b");
     // assert_eq!(rust_get_option3(), "Not Found");
-    assert_eq!(rust_un_warp(vec!["a", "b", "c", "d"]), "a"); // normal
+    // assert_eq!(rust_un_warp(vec!["a", "b", "c", "d"]), "a"); // normal
     // assert_eq!(rust_un_warp(Vec::new()), "a");               //会引起unwarp的线程恐慌
-    assert_eq!(rust_un_warp_or(Vec::new()), "Not found");  //正常
+    // assert_eq!(rust_un_warp_or(Vec::new()), "Not found");  //正常
+    assert_eq!(rust_get_length(vec!["a", "2", "3", "4", "5"]), Some("a"));
+    assert_eq!(rust_get_length(Vec::new()), None);
 }
 
 #[warn(dead_code)]
@@ -79,4 +81,8 @@ fn rust_un_warp(vec: Vec<&str>) -> &str {
 
 fn rust_un_warp_or(vec: Vec<&str>) -> &str {
     rust_option(vec).unwrap_or("Not found")
+}
+
+fn rust_get_length(v: Vec<&str>) -> Option<&str> {
+    rust_option(v).map(|ve| ve)
 }
