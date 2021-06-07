@@ -2,8 +2,9 @@ use std::fs::File;
 use std::io::ErrorKind;
 
 fn main() {
-    // ver_panic();
-    define_error_msg();
+    assert_eq!(rust_get_option(), "a");
+    // assert_eq!(rust_get_option2(), "b");
+    assert_eq!(rust_get_option3(), "Not Found");
 }
 
 #[warn(dead_code)]
@@ -37,4 +38,32 @@ fn define_error_msg() {
     let a = 3;
     let b = 4;
     assert!(a > b, "a is less b");
+}
+
+fn rust_option(names: Vec<&str>) -> Option<&str> {
+    if names.len() > 0 {
+        let shortest = names[0];
+        Some(shortest)
+    } else {
+        None
+    }
+}
+
+fn rust_get_option() -> &'static str {
+    match rust_option(vec!["a", "b", "c"]) {
+        Some(shortest) => shortest,
+        None => "Not found",
+    }
+}
+fn rust_get_option2() -> &'static str {
+    match rust_option(vec!["a", "b", "c"]) {
+        Some(shortest) => shortest,
+        None => "Not found",
+    }
+}
+fn rust_get_option3() -> &'static str {
+    match rust_option(Vec::new()) {
+        Some(shortest) => shortest,
+        None => "Not found",
+    }
 }
