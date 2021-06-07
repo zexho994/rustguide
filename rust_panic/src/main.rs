@@ -2,9 +2,12 @@ use std::fs::File;
 use std::io::ErrorKind;
 
 fn main() {
-    assert_eq!(rust_get_option(), "a");
+    // assert_eq!(rust_get_option(), "a");
     // assert_eq!(rust_get_option2(), "b");
-    assert_eq!(rust_get_option3(), "Not Found");
+    // assert_eq!(rust_get_option3(), "Not Found");
+    assert_eq!(rust_un_warp(vec!["a", "b", "c", "d"]), "a"); // normal
+    // assert_eq!(rust_un_warp(Vec::new()), "a");               //会引起unwarp的线程恐慌
+    assert_eq!(rust_un_warp_or(Vec::new()), "Not found");  //正常
 }
 
 #[warn(dead_code)]
@@ -55,15 +58,25 @@ fn rust_get_option() -> &'static str {
         None => "Not found",
     }
 }
+
 fn rust_get_option2() -> &'static str {
     match rust_option(vec!["a", "b", "c"]) {
         Some(shortest) => shortest,
         None => "Not found",
     }
 }
+
 fn rust_get_option3() -> &'static str {
     match rust_option(Vec::new()) {
         Some(shortest) => shortest,
         None => "Not found",
     }
+}
+
+fn rust_un_warp(vec: Vec<&str>) -> &str {
+    rust_option(vec).unwrap()
+}
+
+fn rust_un_warp_or(vec: Vec<&str>) -> &str {
+    rust_option(vec).unwrap_or("Not found")
 }
