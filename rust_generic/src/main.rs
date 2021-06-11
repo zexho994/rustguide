@@ -7,6 +7,15 @@ fn main() {
 
     let p = Point::new(1,1);
     assert_eq!(p,Point{x:1,y:1});
+
+    let i = getVal(1);
+    let r = getVal("hello");
+    assert_eq!(i,1);
+    assert_eq!(r,"hello");
+}
+
+fn getVal<T>(i:T) -> T {
+    return i
 }
 
 
